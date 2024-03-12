@@ -15,7 +15,7 @@ let animals = {
     {
       animalBreed: "Husky",
       gender: "Male",
-      category: "Birds",
+      category: "Dog",
       image: "https://cdn.britannica.com/84/232784-050-1769B477/Siberian-Husky-dog.jpg",
     },
     {
@@ -47,6 +47,12 @@ let animals = {
       gender: "Female",
       category: "Cat",
       image: "catbreed3.jpeg",
+    },
+    {
+      animalBreed: "German-shepherd",
+      gender: "Female",
+      category: "Dog",
+      image: "https://cdn.shopify.com/s/files/1/0086/0795/7054/files/essentials.jpg?v=1633696836",
     },
   ],
 };

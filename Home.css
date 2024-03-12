@@ -654,7 +654,7 @@ li:hover ul#submenu {
   border-radius: 20px;
   background: var(--main);
   font-size: 1.6rem;
-  color: var(--main);
+  color: var(--white);
   text-transform: none;
 }
 
