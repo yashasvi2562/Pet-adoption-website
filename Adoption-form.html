@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption-form</title>
+</head>
+<style>
+    body {
+        background: #081b29;
+
+    }
+
+    .box {
+        text-align: center;
+        width: 600px;
+        height: 700px;
+        border: 3px solid black;
+        margin-left: 450px;
+        margin-top: 20px;
+        margin-right: 50px;
+        background-color: white;
+        box-shadow: 1px 4px 20px 10px #0ef;
+    }
+
+    .name {
+        text-align: justify;
+        padding: 1em;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 350px;
+        width: 200px;
+        height: 10px;
+    }
+
+    .name2 {
+
+        text-align: justify;
+        padding: 1em;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 350px;
+        width: 200px;
+        height: 10px;
+        transform: translate(150%, -150%);
+    }
+
+    .mail {
+        text-align: justify;
+        padding: 1em;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 350px;
+        width: 200px;
+        height: 10px;
+        transform: translate(0%, -150%);
+    }
+
+    .phone {
+        text-align: justify;
+        padding: 1em;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 350px;
+        width: 200px;
+        height: 10px;
+        transform: translate(150%, -290%);
+    }
+
+    #COUNTRY {
+
+        margin-right: 10px;
+        width: 520PX;
+        height: 40PX;
+        transform: translateY(-210%);
+    }
+
+    .city {
+        text-align: justify;
+
+        padding: 1em;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 700px;
+        width: 500px;
+        height: 10px;
+        transform: translate(2%, -150%);
+    }
+
+    .add {
+        text-align: justify;
+        padding: 1em;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 700px;
+        width: 500px;
+        height: 10px;
+        transform: translate(2%, -100%);
+    }
+
+    #position {
+        margin-right: 10px;
+        width: 520PX;
+        height: 40PX;
+        transform: translateY(20%);
+    }
+
+    .additional {
+
+        padding: 1em;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 700px;
+        width: 500px;
+        height: 100px;
+        transform: translate(2%, 20%);
+    }
+
+    .review {
+
+        padding: 1em;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 700px;
+        width: 500px;
+        height: 10px;
+        transform: translate(2%, 90%);
+    }
+
+    .form_submit {
+
+        background-color: rgb(51, 34, 4);
+        color: white;
+        transform: translate(200%, 30%);
+        height: 20px;
+    }
+
+    .form_submit:hover {
+        background-color: orange;
+        color: aliceblue;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <form action="#">
+            <input type="text" class="name" placeholder="FIRST NAME" required>
+            <input type="text" class="name2" placeholder="LAST NAME">
+            <input type="email" class="mail" placeholder="EMAIL">
+            <input type="text" class="phone" placeholder="PHONE">
+            <Label for="COUNTRY"></Label>
+            <select name="COUNTRY" id="COUNTRY" required>
+                <option value="">Select Country</option>
+
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="USA">USA</option>
+                <option value="Pakistan">Pakistan</option>
+            </select>
+            <input type="text" class="city" placeholder="CITY">
+            <input type="text" class="add" placeholder="ADDRESS">
+
+            <Label for="position"></Label>
+            <select name="position" id="position" required>
+                <option value="">Choose desired pet</option>
+
+                <option value="1">Dog</option>
+                <option value="2">Cat</option>
+            </select>
+            <input type="text" class="additional" placeholder="ADDITIONAL INFO">
+            <input type="text" class="review" placeholder="KINDLY SUBMIT IF FILLED">
+
+            <a href="Adopt.html"><button type="button" class="form_submit">
+                SUBMIT
+            </button></a>
+        </form>
+    </div>
+</body>
+
+</html>
