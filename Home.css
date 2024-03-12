@@ -45,6 +45,24 @@ section {
   padding: 8rem 7%;
 }
 
+/* =========== Preloader ============ */
+
+.loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  background-color: var(--white);
+}
+
+.loader img {
+  width: 20rem;
+  height: 20rem;
+}
+
 .heading {
   text-align: center;
   font-size: 4rem;
@@ -250,69 +268,32 @@ li:hover ul#submenu {
 }
 
 .home .content {
-  max-width: 60rem;
+  max-width: 40rem;
 }
 
 .home .content h1 {
-  opacity: 0;
-  animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
+  color: var(--black);
+  font-size: 3rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+
+.home .content h3 {
   color: var(--black);
   font-size: 6rem;
   line-height: 1.4;
   font-weight: 400;
-}
-
-@keyframes slideLeft {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-
-}
-
-.home .content h3 {
-  animation: slideBottom 1s ease forwards;
-  opacity: 0;
-  color: var(--black);
-  font-size: 8rem;
-  line-height: 1.4;
-  font-weight: 400;
-}
-
-@keyframes slideBottom {
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
 }
 
 .home .content p {
   color: var(--black);
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 1.4;
   font-weight: 400;
-  animation: showText 0.5s 1.5s linear forwards;
-  opacity: 0;
-}
-
-@keyframes showText {
-  100% {
-    opacity: 1;
-  }
 
 }
-
 
 .home .wave {
   position: absolute;
@@ -602,8 +583,6 @@ li:hover ul#submenu {
 /* footer */
 
 .footer {
-  background: url(../images/footer.jpg) no-repeat;
-  background-size: cover;
   padding: 3rem 7%;
 }
 
@@ -671,6 +650,7 @@ li:hover ul#submenu {
   margin-top: 1.4rem;
 }
 
+/* Copyright */
 .foot {
   margin-bottom: 0px;
   width: 100%;
@@ -678,7 +658,7 @@ li:hover ul#submenu {
 
 .text-footer {
   padding: 35px 0;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -741,8 +721,9 @@ li:hover ul#submenu {
   }
 
 }
-@media(max-width:595px){
-  .home{
+
+@media(max-width:595px) {
+  .home {
     background-image: url(https://www.photocase.com/photos/245367-dogsday-nature-animal-pet-dog-1-freedom-breathe-photocase-stock-photo-large.jpeg);
   }
 }
